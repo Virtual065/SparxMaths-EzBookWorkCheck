@@ -8,4 +8,6 @@ When you have finished you can press quit and all the stuff you have wrote will 
 
 Once you have closed the terminal you will not be able to go back and re use it to re add
 
+If you cannot open the file download "run.bat" and have it stored in the same foler and run the .bat file
+
 ### 🆘 **Do not close the terminal using alt f4 or the x in the top left. you have to type quit for it to save.** 🆘
