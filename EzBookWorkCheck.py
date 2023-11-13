@@ -1,4 +1,8 @@
-file = open("main.txt", "a")
+import datetime
+
+time = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
+
+file = open(f"{time}.txt", "w")
 
 counter = 1
 number = 1
@@ -10,8 +14,8 @@ while True:
     if text.lower() == "quit":
         break
     
-    if text.lower() == "next":
 
+    if text.lower() == "next":
         number += 1
         counter = 1
         file.write("\n")
