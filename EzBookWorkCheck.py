@@ -1,20 +1,24 @@
 import datetime
 
-time = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
+import os
 
-file = open(f"{time}.txt", "w")
+if not os.path.exists("output"):
+    os.mkdir("Saves")
+
+time = datetime.datetime.now().strftime("%d-%m-%Y    %Hh %Mm %Ss")
+
+file = open(f"Saves/{time}.txt", "w")
 
 counter = 1
+
 number = 1
 
 while True:
-
     text = input(f"{number}{chr(96 + counter)} = ")
     
     if text.lower() == "quit":
         break
     
-
     if text.lower() == "next":
         number += 1
         counter = 1
