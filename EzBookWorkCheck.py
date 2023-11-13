@@ -20,6 +20,7 @@ while True:
         break
     
     if text.lower() == "next":
+        print()
         number += 1
         counter = 1
         file.write("\n")
